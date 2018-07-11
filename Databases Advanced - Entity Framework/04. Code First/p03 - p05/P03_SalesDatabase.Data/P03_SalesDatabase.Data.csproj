@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180711101213_ProductsAddColumnDescription.cs" />
+    <Compile Remove="Migrations\20180711101442_ProductsAddColumnDescription.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="2.1.1" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\P03_SalesDatabase.Data.Models\P03_SalesDatabase.Data.Models.csproj" />
+  </ItemGroup>
+
+</Project>
